@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/nerva"
+            android:gravity="center" />
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#00000000"
+                android:endColor="#FFFFFFFF"
+                android:angle="90" />
+        </shape>
+    </item>
+</layer-list>
