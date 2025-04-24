@@ -43,6 +43,8 @@ android {
 }
 
 dependencies {
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
     implementation("com.google.ai.client.generativeai:generativeai:0.7.0")
@@ -70,4 +72,5 @@ dependencies {
         exclude(group = "com.android.support", module = "support-compat")
     }
     implementation("com.google.ar:core:1.39.0")
+
 }

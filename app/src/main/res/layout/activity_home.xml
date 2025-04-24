@@ -17,6 +17,17 @@
         android:clipToOutline="true" />
 
     <Button
+        android:id="@+id/logOffButton"
+        android:padding="2dp"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Log Off"
+        android:background="@drawable/round_red_button"
+        />
+
+    <Button
         android:id="@+id/chatNowButton"
         android:padding="12dp"
         android:layout_width="wrap_content"

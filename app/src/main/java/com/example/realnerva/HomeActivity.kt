@@ -1,7 +1,7 @@
 package com.example.realnerva
 
 import android.content.Intent
-import android.net.Uri
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.Button
@@ -29,14 +29,19 @@ class HomeActivity : ComponentActivity() {
         }
 
         emergencyButton = findViewById(R.id.emergencyButton)
-
         emergencyButton.setOnClickListener {
             val intent = Intent(this, Emergency::class.java)
             startActivity(intent)
         }
 
+        val logOffButton = findViewById<Button>(R.id.logOffButton)
+        logOffButton.setOnClickListener {
+            val sharedPreferences: SharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
+            sharedPreferences.edit().putBoolean("isLoggedIn", false).apply()
 
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
-
-
 }

@@ -7,6 +7,8 @@ import android.os.CountDownTimer
 import android.widget.Button
 import androidx.activity.ComponentActivity
 
+
+//Den kserw akoma pws na to kanw oti vlepete edw den einai kalh lush, apla peiramatizomai
 class Emergency : ComponentActivity() {
     private lateinit var emergencyButton: Button
     private lateinit var cancelButton: Button

@@ -19,6 +19,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         private const val COLUMN_NAME = "name"
         private const val COLUMN_SURNAME = "surname"
     }
+    // Na kserete den exw valei akoma limitation gia to ti prepei na einai to mail kai poso megalos o kodikos dioti testarw me apla A A A kai 1 1 1 gia pio grhgora gia thn wra
 
     override fun onCreate(db: SQLiteDatabase) {
         val createTableQuery = """

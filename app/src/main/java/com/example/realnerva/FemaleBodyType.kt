@@ -30,7 +30,6 @@ class FemaleBodyType : AppCompatActivity() {
                 node.select()
             }
             .exceptionally { throwable ->
-                // Handle the exception
                 null
             }
     }
